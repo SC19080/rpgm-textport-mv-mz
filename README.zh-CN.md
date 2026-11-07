@@ -20,7 +20,7 @@ RPGM TextPort **不会**向游戏注入代码、挂钩运行时，也不会修�
 >
 > **不包含任何游戏数据。** 本仓库只包含工具本身。你必须拥有你所翻译的游戏。
 
-> **要翻译 VX Ace 游戏？** 请使用 RPGM TextPort 的 VX Ace 版本。
+> **要翻译 VX Ace 游戏？** 请使用 [RPGM TextPort 的 VX Ace 版本](https://github.com/<your-username>/rpgm-textport-vx-ace)。
 
 ---
 
