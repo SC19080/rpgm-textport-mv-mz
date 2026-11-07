@@ -27,7 +27,7 @@ The game then displays the translated text after it is restarted.
 > **No game data is included.** This repository contains only the tool. You
 > must own the games you translate.
 
-> **Translating a VX Ace game?** Use the VX Ace edition of RPGM TextPort.
+> **Translating a VX Ace game?** Use the [VX Ace edition of RPGM TextPort](https://github.com/<your-username>/rpgm-textport-vx-ace).
 
 ---
 
