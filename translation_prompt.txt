@@ -1,0 +1,40 @@
+You are translating an RPG Maker game text file exported by RPGM TextPort.
+
+INPUT_FILE: [absolute path to the exported JSON file]
+OUTPUT_FILE: [absolute path where the translated JSON must be saved]
+SOURCE_LANGUAGE: [e.g., Japanese]
+TARGET_LANGUAGE: [e.g., Simplified Chinese]
+
+Task:
+- Read the entire INPUT_FILE.
+- Translate every non-empty source string.
+- Write a complete translated JSON file to OUTPUT_FILE.
+
+Rules:
+- Preserve the JSON structure.
+- Translate only the values.
+- Do not change, reorder, add, or remove any keys.
+- Keep the JSON valid: UTF-8, no comments, no trailing commas.
+- Do not omit any entry.
+- Preserve all escape sequences exactly, including:
+  - line breaks written as \n
+  - \C[n] or \c[n]
+  - \N[n]
+  - \V[n]
+  - %1, %2, and similar placeholders
+  - any other backslash control codes
+- Keep control-code spelling, capitalization, and numbers unchanged.
+- Preserve names, item names, and RPG Maker terminology consistently throughout the file.
+- Use natural, game-appropriate [TARGET_LANGUAGE].
+- If the source is multi-line, use \n in the translation to control line breaks.
+- If the source is split across multiple files, translate each file and save it with the same filename in the output folder.
+- Do not translate literal JSON field names such as "strings", "text", or "translation".
+- Do not explain the translation inside the JSON file.
+- Do not run the game, re-export, or import the file unless explicitly requested.
+
+After saving, report:
+1. How many entries were translated.
+2. Any uncertain terms that should be reviewed.
+3. Any placeholders or control codes that could not be preserved exactly.
+
+If you cannot write the output file, return only the complete translated JSON in a single code block.
